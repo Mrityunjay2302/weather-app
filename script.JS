@@ -44,12 +44,14 @@ console.log(name)
 //  adding event to the button--
 document.querySelector(".button").addEventListener("click", function () {
   weather.search();
+  document.querySelector(".input").value = " ";
 });
 
 //  adding event to the search--
 document.querySelector(".input").addEventListener("keyup", (event) => {
   if (event.key == "Enter") {
     weather.search();
+    document.querySelector(".input").value = " ";
   }
 });
 
