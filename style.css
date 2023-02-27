@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    font-family: "Great Vibes", cursive;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.616);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    text-transform: capitalize;
+  }
+  h1{
+    color: rgb(27, 26, 26);
+    font-size: 80px;
+    text-shadow: 1px 1px 5px whitesmoke;
+    font-weight: lighter;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* width: 100px; */
+    height: 55%;
+    background-color: #070707d0;
+    border-radius: 30px;
+    padding: 0%;
+    color: white;
+    padding: 200px;
+    border: 1px solid white;
+    margin-bottom: 100px;
+  }
+  .searchbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .input {
+    background: #7c7c7c2b;
+    margin-right: 10px;
+    padding: 4px;
+    width: 257px;
+    border: 2px solid #7c7c7c2b;
+    border-radius: 8px;
+    padding: 8px;
+    color: white;
+  }
+  .button {
+    margin: 20px;
+    border-radius: 50%;
+    border: none;
+    height: 50px;
+    width: 50px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  .button:hover{
+    font-size: 20px;
+    background-color: rgb(43, 42, 42);
+  }
+  .temperatur {
+    font-size: xxx-large;
+    padding: 0;
+    margin: 0%;
+  }
+  h2 {
+    padding: 0;
+    margin-bottom: 0%;
+  }
+  .icon {
+    margin: 0%;
+    padding: 0%;
+    width: 65px;
+    height: 65px;
+  }
+  .weatherdetail.loading {
+    visibility: hidden;
+    /* max-height: 20px; */
+    position: relative;
+  }
+  .weatherdetail.loading:after {
+    visibility: visible;
+    content: "Please wait";
+    color: white;
+    position: absolute;
+  }
+  
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+    float: left;
+  }
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+  
+  
+  /* For Mobile Portrait View */
+  @media only screen and (min-width: 568px) and (max-width: 640px) {
+    [class*="col-"] {
+      width: 83.33%;
+      float: left;
+    }
+  }
+  /* For Tablet View */
+  @media only screen and (min-width: 640px) and (max-width: 768px) {
+    [class*="col-"] {
+      width: 83.33%;
+      float: left;
+    }
+  }
+  /* iPads (landscape) ----------- */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    [class*="col-"] {
+      width: 55.33%;
+      float: left;
+    }
+  }
+  /* Desktops and laptops ----------- */
+  @media only screen and (min-width: 1024px) and (max-width: 1224px) {
+    [class*="col-"] {
+      width: 41.66%;
+      float: left;
+    }
+  }
+  /* Large screens ----------- */
+  @media only screen and (min-width: 1224px) and (max-width: 1824px) {
+    [class*="col-"] {
+      width: 33.33%;
+      float: left;
+    }
+  }
